@@ -1,0 +1,393 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Project fonts */
+@font-face {
+  font-family: "League-Spartan";
+  src: url(fonts/LeagueSpartan-2.220/static/WOFF2/LeagueSpartan-Medium.woff2)
+      format("woff2"),
+    url(fonts/LeagueSpartan-2.220/static/WOFF/LeagueSpartan-Medium.woff)
+      format("woff")
+      url(fonts/LeagueSpartan-2.220/static/TTF/LeagueSpartan-Medium.ttf)
+      format("ttf")
+      url(fonts/LeagueSpartan-2.220/static/OTF/LeagueSpartan-Medium.otf)
+      format("otf");
+}
+/*Header style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+div,
+label,
+input {
+  font-family: "League-Spartan";
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  width: min(60rem, 90%);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+ul li {
+  max-width: 12rem;
+  justify-self: center;
+  display: grid;
+  grid-template:
+    "icon"
+    "line"
+    "dot"
+    "title"
+    "descr" 1fr;
+  justify-items: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.descr{
+    text-align: left;
+    font-variant: all-petite-caps;
+}
+ul li .icon {
+  grid-area: icon;
+  width: 6rem;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 2.5rem;
+  border: 0.4rem solid var(--bgColor);
+  border-radius: 50%;
+  background: var(--accent-color);
+  box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.45),
+    inset -0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
+}
+.icon img{
+    width: 70%;
+    height: 70%;
+}
+ul li::before {
+  content: "";
+  grid-area: line;
+  height: 2rem;
+  border-right: 2px dotted currentColor;
+}
+
+ul li::after {
+  content: "";
+  grid-area: dot;
+  width: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--accent-color);
+  justify-self: center;
+  margin-bottom: 0.5rem;
+}
+
+ul li .title {
+  grid-area: title;
+  margin-block: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ---------------------------- */
+header{
+    padding: 2rem;
+    background-color: #A7D1D2;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #E0F4F5;
+    height: 100vh;
+}
+header h1 {
+  text-align: center;
+  color: #015366;
+  font-weight: bold;
+  font-size: 3rem;
+}
+header h2 {
+    text-align: center;
+    color: #4a696b;
+    font-size: x-large;
+    margin: 1rem 0 .5rem 0;
+}
+footer {
+    height: 10rem;
+    text-align: center;
+    align-content: center;
+    background-color: #015366;
+}
+footer p{
+    color: #A7D1D2;
+    padding: 2rem;
+}
+footer a{
+    color: #E0F4F5;
+    font-size: large;
+}
+
+.chest{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4rem;
+}
+.chest div:last-child{
+ text-align: center;
+ width: 40%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ margin: auto;
+}
+.chest div:first-child{
+    text-align: center;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding:2rem;
+   }
+/* Inputs style */
+#btn-increase{
+    border-radius: 5px;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    padding: 10px;
+    transition: all .2s;
+    background:center/cover no-repeat #a7d1d200 url("images/plus-circle-svgrepo-com.svg") ;
+}
+#btn-increase:hover{
+    transform:rotate(180deg) scale(1.05);
+}
+#btn-decrease{
+    border-radius: 5px;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    padding: 10px;
+    transition: all .2s;
+    background:center/cover no-repeat #a7d1d200 url("images/minus-circle-svgrepo-com.svg") ;
+}
+#btn-decrease:hover{
+    transform:rotate(180deg) scale(1.05);
+}
+#btn-reset{
+    border-radius: 5px;
+
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    padding: 10px;
+    transition: all .2s;
+    background:center/cover no-repeat #a7d1d200 url("images/reset-svgrepo-com.svg") ;
+}
+#btn-reset:hover{
+    transform:rotate(50deg) scale(1.05);
+}
+
+.chest > div:first-child input{
+    border-radius: 3px;
+    width: 8rem;
+    height: 4rem;
+    border:none;
+    background-color: #A7D1D2;
+    text-align: center;
+    font-size: xx-large;
+    font-family: cursive;
+    color: #033540;
+   }
+   .set-limit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+   }
+   .set-limit div:first-child input{
+    height: 3rem;
+    width: 6rem;
+    font-size: x-small;
+    text-align: center;
+    border:none;
+    border-radius: 3px;
+    background-color: #A7D1D2;
+    font-family: cursive;
+    color: #033540;
+   }
+   .set-limit div:first-child label{
+    text-align: center;
+    align-content: center;
+    color: #033540;
+    padding-right: 1rem;
+   }
+   #limit-button{
+    border: none;
+    border-radius: 3px;
+    font-size:large;
+    width: 8rem;
+    height: 2rem;
+    background-color: #A7D1D2;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    transition: all .2s;
+   }
+   #limit-button:hover{
+    background-color: #92b6b7;
+    transform: scale(1.03);
+}
