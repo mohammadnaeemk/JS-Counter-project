@@ -192,9 +192,9 @@ ul li {
   align-items: flex-start;
   text-align: center;
 }
-.descr{
-    text-align: left;
-    font-variant: all-petite-caps;
+.descr {
+  text-align: left;
+  font-variant: all-petite-caps;
 }
 ul li .icon {
   grid-area: icon;
@@ -210,9 +210,9 @@ ul li .icon {
   box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.45),
     inset -0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
 }
-.icon img{
-    width: 70%;
-    height: 70%;
+.icon img {
+  width: 70%;
+  height: 70%;
 }
 ul li::before {
   content: "";
@@ -242,16 +242,16 @@ ul li .title {
 }
 
 /* ---------------------------- */
-header{
-    padding: 2rem;
-    background-color: #A7D1D2;
+header {
+  padding: 2rem;
+  background-color: #a7d1d2;
 }
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #E0F4F5;
-    height: 100vh;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e0f4f5;
+  height: 100vh;
 }
 header h1 {
   text-align: center;
@@ -260,134 +260,165 @@ header h1 {
   font-size: 3rem;
 }
 header h2 {
-    text-align: center;
-    color: #4a696b;
-    font-size: x-large;
-    margin: 1rem 0 .5rem 0;
+  text-align: center;
+  color: #4a696b;
+  font-size: x-large;
+  margin: 1rem 0 0.5rem 0;
 }
 footer {
-    height: 10rem;
-    text-align: center;
-    align-content: center;
-    background-color: #015366;
+  height: 10rem;
+  text-align: center;
+  align-content: center;
+  background-color: #015366;
 }
-footer p{
-    color: #A7D1D2;
-    padding: 2rem;
+footer p {
+  color: #a7d1d2;
+  padding: 2rem;
 }
-footer a{
-    color: #E0F4F5;
-    font-size: large;
+footer a {
+  color: #e0f4f5;
+  font-size: large;
 }
 
-.chest{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 4rem;
+.chest {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4rem;
 }
-.chest div:last-child{
- text-align: center;
- width: 40%;
- display: flex;
- flex-direction: row;
- justify-content: space-around;
- margin: auto;
+.chest div:last-child {
+  text-align: center;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
 }
-.chest div:first-child{
-    text-align: center;
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-    padding:2rem;
-   }
+.chest div:first-child {
+  text-align: center;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  padding: 2rem;
+}
 /* Inputs style */
-#btn-increase{
-    border-radius: 5px;
-    width: 3rem;
-    height: 3rem;
-    border: none;
-    padding: 10px;
-    transition: all .2s;
-    background:center/cover no-repeat #a7d1d200 url("images/plus-circle-svgrepo-com.svg") ;
+#btn-increase {
+  border-radius: 5px;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  padding: 10px;
+  transition: all 0.2s;
+  background: center/cover no-repeat #a7d1d200
+    url("images/plus-circle-svgrepo-com.svg");
 }
-#btn-increase:hover{
-    transform:rotate(180deg) scale(1.05);
+#btn-increase:hover {
+  transform: rotate(180deg) scale(1.05);
 }
-#btn-decrease{
-    border-radius: 5px;
-    width: 3rem;
-    height: 3rem;
-    border: none;
-    padding: 10px;
-    transition: all .2s;
-    background:center/cover no-repeat #a7d1d200 url("images/minus-circle-svgrepo-com.svg") ;
+#btn-decrease {
+  border-radius: 5px;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  padding: 10px;
+  transition: all 0.2s;
+  background: center/cover no-repeat #a7d1d200
+    url("images/minus-circle-svgrepo-com.svg");
 }
-#btn-decrease:hover{
-    transform:rotate(180deg) scale(1.05);
+#btn-decrease:hover {
+  transform: rotate(180deg) scale(1.05);
 }
-#btn-reset{
-    border-radius: 5px;
+#btn-reset {
+  border-radius: 5px;
 
-    width: 3rem;
-    height: 3rem;
-    border: none;
-    padding: 10px;
-    transition: all .2s;
-    background:center/cover no-repeat #a7d1d200 url("images/reset-svgrepo-com.svg") ;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  padding: 10px;
+  transition: all 0.2s;
+  background: center/cover no-repeat #a7d1d200
+    url("images/reset-svgrepo-com.svg");
 }
-#btn-reset:hover{
-    transform:rotate(50deg) scale(1.05);
+#btn-reset:hover {
+  transform: rotate(50deg) scale(1.05);
 }
 
-.chest > div:first-child input{
-    border-radius: 3px;
-    width: 8rem;
-    height: 4rem;
-    border:none;
-    background-color: #A7D1D2;
-    text-align: center;
-    font-size: xx-large;
-    font-family: cursive;
-    color: #033540;
-   }
-   .set-limit {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-   }
-   .set-limit div:first-child input{
-    height: 3rem;
-    width: 6rem;
-    font-size: x-small;
-    text-align: center;
-    border:none;
-    border-radius: 3px;
-    background-color: #A7D1D2;
-    font-family: cursive;
-    color: #033540;
-   }
-   .set-limit div:first-child label{
-    text-align: center;
-    align-content: center;
-    color: #033540;
-    padding-right: 1rem;
-   }
-   #limit-button{
-    border: none;
-    border-radius: 3px;
-    font-size:large;
-    width: 8rem;
-    height: 2rem;
-    background-color: #A7D1D2;
-    margin-bottom: 2rem;
-    margin-top: -1rem;
-    transition: all .2s;
-   }
-   #limit-button:hover{
-    background-color: #92b6b7;
-    transform: scale(1.03);
+
+.chest > div:first-child input {
+  border-radius: 3px;
+  width: 8rem;
+  height: 4rem;
+  border: none;
+  background-color: #a7d1d2;
+  text-align: center;
+  font-size: xx-large;
+  font-family: cursive;
+  color: #033540;
+}
+.set-limit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+.set-limit div:first-child input {
+  height: 3rem;
+  width: 6rem;
+  font-size: xx-large;
+
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  background-color: #a7d1d2;
+  font-family: cursive;
+  color: #033540;
+}
+.set-limit div:first-child label {
+  text-align: center;
+  align-content: center;
+  color: #033540;
+  padding-right: 1rem;
+}
+#limit-button {
+  border: none;
+  border-radius: 3px;
+  font-size: large;
+  width: 8rem;
+  height: 2rem;
+  background-color: #a7d1d2;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+  transition: all 0.2s;
+}
+#limit-button:hover {
+  background-color: #92b6b7;
+  transform: scale(1.03);
+}
+
+
+.alert-lable-failure {
+  opacity: 0; 
+  background-image: linear-gradient(to right, #05193700, #fa040033, #a6eb1200);
+  color: rgb(101, 3, 3);
+  transition: all .5s;
+  text-align: center;
+  position: absolute;
+  align-self: center;
+  margin-top: -25rem;
+}
+.alert-lable-success {
+  opacity: 0; 
+  background-image: linear-gradient(to right, #05193700, #00ff6a33, #a6eb1200);
+  color: rgb(0, 46, 17);
+  transition: all .5s;
+  text-align: center;
+  position: absolute;
+  align-self: center;
+  margin-top: -25rem;
+}
+.show{
+  transition: all 1s;
+  opacity: 1;
 }

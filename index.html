@@ -11,53 +11,71 @@
       <h1>Mini counter project</h1>
       <h2>Languages ​​used in this project:</h2>
       <ul>
-        
         <li style="--accent-color: #f20071">
-          <div class="icon"><img src="images/html-svgrepo-com.svg" alt="HTML image"></div>
+          <div class="icon">
+            <img src="images/html-svgrepo-com.svg" alt="HTML image" />
+          </div>
           <div class="title">HTML 5</div>
           <div class="descr">
-            Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser.
+            Hypertext Markup Language (HTML) is the standard markup language for
+            documents designed to be displayed in a web browser.
           </div>
         </li>
 
         <li style="--accent-color: #fcba35">
-          <div class="icon"><img src="images/css-svgrepo-com.svg" alt="CSS image"></div>
+          <div class="icon">
+            <img src="images/css-svgrepo-com.svg" alt="CSS image" />
+          </div>
           <div class="title">CSS</div>
-          <div class="descr">Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML</div>
-        </li>
-
-        <li style="--accent-color: #dae438">
-          <div class="icon"><img src="images/js-svgrepo-com.svg" alt="JS image"></div>
-          <div class="title">Javascript</div>
           <div class="descr">
-            JavaScript , often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS.
+            Cascading Style Sheets (CSS) is a style sheet language used for
+            specifying the presentation and styling of a document written in a
+            markup language such as HTML or XML
           </div>
         </li>
 
+        <li style="--accent-color: #dae438">
+          <div class="icon">
+            <img src="images/js-svgrepo-com.svg" alt="JS image" />
+          </div>
+          <div class="title">Javascript</div>
+          <div class="descr">
+            JavaScript , often abbreviated as JS, is a programming language and
+            core technology of the Web, alongside HTML and CSS.
+          </div>
+        </li>
       </ul>
-
     </header>
 
     <div class="chest">
-        <div><input disabled id="text-result" type="text" value="0"></div>
-
-        <div class="set-limit">
-            <div><label for="limit-input">Set limit : </label><input id="limit-input" type="text" placeholder="For example: 12"></div>
-            <div><button id="limit-button">Set :)</button></div>
-        </div>
-
+      
+      <div><input disabled id="text-result" type="text" value="0" /></div>
+      <label id="alert1" class="alert-lable-failure">You cannot exceed the limit!</label>
+      <label id="alert2" class="alert-lable-failure">You cannot enter a negative number  for the limit!</label>
+      <label id="alert3" class="alert-lable-failure">You must fill in the input!</label>
+      <label id="alert4" class="alert-lable-success">The limit has been set successfully :)</label>
+      <div class="set-limit">
         <div>
-            <button id="btn-increase" name="#"></button>
-            <button id="btn-decrease" name="#"></button>
-            <button id="btn-reset" name="#"></button> 
+          <label for="limit-input">Set limit : </label
+          ><input id="limit-input" type="number" placeholder="" />
         </div>
-        
+        <div><button id="limit-button">Set :)</button></div>
+      </div>
+
+      <div>
+        <button id="btn-increase" name="#"></button>
+        <button id="btn-decrease" name="#"></button>
+        <button id="btn-reset" name="#"></button>
+      </div>
     </div>
 
     <footer>
       <p>
         This mini-project was developed by Mr. Mohammad Naeem with the link of
-        Github account <a href="https://github.com/mohammadnaeemk/">github.com/mohammadnaeemk</a>
+        Github account
+        <a href="https://github.com/mohammadnaeemk/"
+          >github.com/mohammadnaeemk</a
+        >
       </p>
     </footer>
 
